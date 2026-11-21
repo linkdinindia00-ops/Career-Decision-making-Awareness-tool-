@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#4338ca">
+<title>CareerCompass 9–12 | Hobby vs. Career Reality Check</title>
+<style>
+:root{--ink:#172033;--muted:#64748b;--indigo:#4f46e5;--indigo2:#4338ca;--teal:#0f9f91;--line:#e6eaf2;--paper:#f7f8fc;--white:#fff;--shadow:0 18px 50px rgba(30,41,59,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}
+button,input,select{font:inherit}button{cursor:pointer}.shell{max-width:1080px;margin:auto;padding:24px 18px 60px}.topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:28px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.4px}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#4f46e5,#0f9f91);display:grid;place-items:center;color:white;font-size:21px;box-shadow:0 8px 20px #4f46e533}.brand small{display:block;color:var(--muted);font-weight:600;font-size:11px;letter-spacing:1.2px}.top-note{font-size:12px;color:var(--muted);background:white;border:1px solid var(--line);padding:8px 12px;border-radius:999px}
+.panel{background:white;border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}.welcome{display:grid;grid-template-columns:1.1fr .9fr;overflow:hidden;min-height:510px}.welcome-copy{padding:clamp(28px,5vw,58px)}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--indigo);font-size:12px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}.eyebrow:before{content:"";width:22px;height:2px;background:var(--teal)}h1{font-size:clamp(36px,5vw,58px);line-height:1.04;letter-spacing:-2.4px;margin:18px 0}.gradient{background:linear-gradient(100deg,var(--indigo),var(--teal));-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:17px;color:#526078;max-width:560px}.feature-row{display:flex;flex-wrap:wrap;gap:9px;margin:25px 0}.pill{background:#f1f5ff;color:#4145a4;padding:7px 11px;border-radius:999px;font-size:12px;font-weight:700}.welcome-art{background:radial-gradient(circle at 75% 25%,#c8f5ec 0,transparent 34%),linear-gradient(145deg,#eef2ff,#e7fbf7);display:flex;align-items:center;justify-content:center;padding:30px;position:relative;overflow:hidden}.orbit{width:min(330px,75vw);aspect-ratio:1;border:1px dashed #9ba6e8;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #c3c9ef;border-radius:50%;inset:32px}.orbit:after{inset:70px}.compass{width:128px;height:128px;border-radius:38px;background:linear-gradient(135deg,#4f46e5,#0f9f91);display:grid;place-items:center;color:#fff;font-size:56px;box-shadow:0 22px 35px #3e4ca844;z-index:1;transform:rotate(-8deg)}.orbit-tag{position:absolute;background:white;border:1px solid #e4e8f2;border-radius:14px;padding:10px 13px;font-size:12px;font-weight:800;box-shadow:0 8px 20px #27345a12}.t1{top:10%;left:2%}.t2{top:12%;right:-3%}.t3{bottom:13%;left:-2%}.t4{bottom:12%;right:0}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}.field label{display:block;font-size:13px;font-weight:750;margin-bottom:7px}.field input,.field select{width:100%;border:1px solid #d9deea;border-radius:12px;padding:13px 14px;background:#fff;color:var(--ink);outline:none}.field input:focus,.field select:focus{border-color:var(--indigo);box-shadow:0 0 0 3px #4f46e51a}.btn{border:0;border-radius:13px;padding:13px 19px;font-weight:800;transition:.2s;display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn:hover{transform:translateY(-1px)}.primary{background:linear-gradient(100deg,var(--indigo),#5b55e8);color:white;box-shadow:0 8px 18px #4f46e533}.secondary{background:#eef2ff;color:#3730a3}.outline{background:white;border:1px solid var(--line);color:#334155}.btn:disabled{opacity:.4;cursor:not-allowed;transform:none}.start-btn{margin-top:18px;width:100%}.fine{font-size:12px;color:var(--muted);margin-top:13px}
+.quiz{max-width:820px;margin:auto}.quiz-head{padding:22px 24px;margin-bottom:16px}.phase-line{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.phase{font-size:13px;font-weight:800;color:var(--indigo)}.counter{font-size:12px;color:var(--muted);font-weight:700}.progress{height:9px;background:#edf0f7;border-radius:99px;overflow:hidden;margin-top:14px}.progress>div{height:100%;width:0;background:linear-gradient(90deg,var(--indigo),var(--teal));border-radius:99px;transition:width .35s}
+.question-card{padding:clamp(22px,4vw,36px)}.q-kicker{font-size:12px;color:var(--teal);font-weight:850;letter-spacing:1px;text-transform:uppercase}.question-card h2{font-size:clamp(23px,3vw,31px);line-height:1.25;letter-spacing:-.7px;margin:10px 0 8px}.question-sub{color:var(--muted);font-size:14px;margin:0 0 23px}.options{display:grid;gap:11px}.option{display:flex;align-items:flex-start;gap:13px;text-align:left;border:1.5px solid #e4e8f0;background:#fff;padding:15px 16px;border-radius:15px;color:#263248;transition:.18s;width:100%}.option:hover{border-color:#a5a5ee;background:#fafaff}.option.selected{border-color:var(--indigo);background:#f2f2ff;box-shadow:0 0 0 2px #4f46e510}.letter{width:29px;height:29px;flex:0 0 29px;border-radius:9px;background:#f0f2f8;color:#58647b;display:grid;place-items:center;font-weight:850;font-size:12px}.selected .letter{background:var(--indigo);color:white}.option-text{font-size:14px;font-weight:600;line-height:1.45;padding-top:3px}.quiz-actions{display:flex;justify-content:space-between;gap:12px;margin-top:24px}.quiz-actions .btn{min-width:120px}
+.result-wrap{max-width:960px;margin:auto}.result-hero{padding:30px;background:linear-gradient(120deg,#eef2ff,#e8fbf7);border:1px solid #dce5f2;border-radius:22px;margin-bottom:18px}.result-hero h2{font-size:clamp(28px,4vw,40px);letter-spacing:-1px;margin:8px 0}.result-hero p{color:#526078;margin:0}.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.result-card{padding:22px}.result-card h3{margin:0 0 15px;font-size:17px}.track-row{margin:15px 0}.track-top{display:flex;justify-content:space-between;gap:8px;font-size:13px;font-weight:750;margin-bottom:6px}.bar-pair{display:grid;grid-template-columns:1fr 1fr;gap:7px}.bar{height:10px;border-radius:99px;background:#edf0f6;overflow:hidden}.bar span{display:block;height:100%;border-radius:99px;transition:width .5s}.interest-fill{background:#6366f1}.skill-fill{background:#14a89a}.legend{display:flex;gap:15px;flex-wrap:wrap;color:var(--muted);font-size:11px;margin-top:13px}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px}.insight{padding:16px;border-radius:15px;background:#f8fafc;border:1px solid var(--line);margin-top:12px}.insight strong{display:block;margin-bottom:4px}.roadmap{padding:24px;margin-top:16px}.roadmap h3{margin:0 0 15px}.roadmap-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.road-item{border:1px solid var(--line);border-radius:15px;padding:16px}.road-item h4{margin:0 0 6px}.road-item p{margin:0;color:#5b667b;font-size:13px}.tag{display:inline-block;margin-top:9px;font-size:11px;font-weight:800;padding:5px 8px;border-radius:999px;background:#eef2ff;color:#4145a4}.action-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.disclaimer{font-size:12px;color:#64748b;margin:17px 2px 0;line-height:1.6}.hidden{display:none!important}.footer{text-align:center;color:#8490a4;font-size:11px;margin-top:28px}
+@media(max-width:760px){.welcome{grid-template-columns:1fr}.welcome-art{min-height:260px;order:-1}.welcome-copy{padding:28px}.orbit{width:220px}.compass{width:95px;height:95px;font-size:42px;border-radius:28px}.t1,.t2,.t3,.t4{font-size:10px;padding:7px 9px}.form-grid,.result-grid,.roadmap-grid{grid-template-columns:1fr}.top-note{display:none}.shell{padding:16px 12px 40px}.quiz-head{padding:18px}.question-card{padding:22px 17px}.option{padding:13px}.quiz-actions .btn{min-width:0;flex:1}.result-hero{padding:23px}}
+@media print{body{background:white}.shell{max-width:100%;padding:0}.topbar,.action-row,.footer{display:none!important}.panel,.result-hero{box-shadow:none;break-inside:avoid}.result-wrap{max-width:100%}.result-card,.roadmap{break-inside:avoid}.disclaimer{color:#333}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="topbar">
+  <div class="brand"><div class="logo">⌖</div><div>CareerCompass <small>HOBBY VS. CAREER REALITY CHECK</small></div></div>
+  <div class="top-note">For Classes 9–12 · India</div>
+</header>
+
+<main>
+<section id="welcome" class="panel welcome">
+  <div class="welcome-copy">
+    <div class="eyebrow">Find your direction</div>
+    <h1>Your interests are a start.<br><span class="gradient">Your strengths add direction.</span></h1>
+    <p class="lead">A thoughtful 18-question check-in to explore what excites you, how you handle real-world challenges, and which career areas may be worth exploring.</p>
+    <div class="feature-row"><span class="pill">18 simple questions</span><span class="pill">Interest + skill comparison</span><span class="pill">Personal action plan</span></div>
+    <div class="form-grid">
+      <div class="field"><label for="studentName">Student name</label><input id="studentName" maxlength="45" placeholder="Enter your name" autocomplete="name"></div>
+      <div class="field"><label for="studentClass">Your class</label><select id="studentClass"><option value="">Select class</option><option>9</option><option>10</option><option>11</option><option>12</option></select></div>
+    </div>
+    <button class="btn primary start-btn" id="startBtn">Start Assessment <span>→</span></button>
+    <p class="fine">There are no right or wrong answers. Choose what feels most like you, not what sounds impressive.</p>
+  </div>
+  <div class="welcome-art" aria-hidden="true"><div class="orbit"><div class="compass">⌖</div><span class="orbit-tag t1">TECH</span><span class="orbit-tag t2">CREATIVE</span><span class="orbit-tag t3">PEOPLE</span><span class="orbit-tag t4">BUSINESS</span></div></div>
+</section>
+
+<section id="quiz" class="quiz hidden">
+  <div class="panel quiz-head">
+    <div class="phase-line"><span class="phase" id="phaseName"></span><span class="counter" id="counter">Question 1 of 18</span></div>
+    <div class="progress"><div id="progressFill"></div></div>
+  </div>
+  <div class="panel question-card">
+    <div class="q-kicker" id="qKicker">Interest check</div>
+    <h2 id="questionText"></h2>
+    <p class="question-sub" id="questionSub">Choose the option that sounds most like you.</p>
+    <div class="options" id="options"></div>
+    <div class="quiz-actions">
+      <button class="btn outline" id="backBtn">← Back</button>
+      <button class="btn primary" id="nextBtn" disabled>Next question →</button>
+    </div>
+  </div>
+</section>
+
+<section id="results" class="result-wrap hidden">
+  <div class="result-hero">
+    <div class="eyebrow">Your CareerCompass snapshot</div>
+    <h2 id="resultTitle">Your results</h2>
+    <p id="resultIntro"></p>
+  </div>
+  <div class="result-grid">
+    <div class="panel result-card">
+      <h3>Interest vs. skill snapshot</h3>
+      <div id="scoreRows"></div>
+      <div class="legend"><span><i class="dot" style="background:#6366f1"></i>Interest points</span><span><i class="dot" style="background:#14a89a"></i>Skill / temperament points</span></div>
+      <p class="fine">Each track can score up to 18 points in each phase.</p>
+    </div>
+    <div class="panel result-card">
+      <h3>What your pattern may mean</h3>
+      <div class="insight"><strong id="topTrackName"></strong><span id="topTrackDesc"></span></div>
+      <div class="insight"><strong id="gapTitle"></strong><span id="gapDesc"></span></div>
+      <div class="insight"><strong>Remember</strong><span>This is a reflection tool, not an aptitude exam or a fixed label. Skills can grow with practice, teaching and experience.</span></div>
+    </div>
+  </div>
+  <div class="panel roadmap">
+    <h3>Your next-step roadmap</h3>
+    <div id="roadmapText"></div>
+    <div class="roadmap-grid" id="careerCards"></div>
+    <p class="disclaimer">Important: This quiz is an educational self-reflection activity, not a scientifically validated psychometric test or a guarantee of career success. Do not choose a stream or profession from this score alone. Consider school performance, subjects you enjoy, family and financial context, conversations with teachers/counsellors, and real-world exposure. Some careers (such as medicine, law, architecture and CA) have specific eligibility and entrance requirements that should be checked from official sources.</p>
+    <div class="action-row"><button class="btn primary" id="printBtn">Print / Save Result</button><button class="btn secondary" id="retakeBtn">↻ Retake Quiz</button><button class="btn outline" id="homeBtn">Back to welcome</button></div>
+  </div>
+</section>
+</main>
+<div class="footer">CareerCompass 9–12 · Explore first. Decide with care.</div>
+</div>
+
+<script>
+"use strict";
+const tracks={
+ TECH:{name:"TECH",full:"Analytical & Builders",color:"#4f46e5",desc:"You may enjoy understanding systems, investigating how things work and solving structured problems.",careers:"Engineering, computer science, data science, AI, pure sciences, architecture and technical research.",subjects:"Mathematics, science, computer science and practical problem-solving."},
+ CREATIVE:{name:"CREATIVE",full:"Designers & Storytellers",color:"#d97706",desc:"You may be drawn to visual communication, original ideas, storytelling and making experiences clearer or more engaging.",careers:"UI/UX design, graphic design, animation, film/media, content creation, communication and creative roles in architecture.",subjects:"Art/design, English, media, technology tools and observation-based projects."},
+ BUSINESS:{name:"BUSINESS",full:"Leaders & Organizers",color:"#0f9f91",desc:"You may enjoy planning, coordinating people, making practical decisions and turning ideas into outcomes.",careers:"Entrepreneurship, finance, CA, law, management, marketing, economics and operations.",subjects:"Commerce, economics, mathematics where relevant, communication and financial literacy."},
+ PEOPLE:{name:"PEOPLE",full:"Helpers & Educators",color:"#db5b83",desc:"You may be motivated by understanding people, explaining ideas, supporting others and improving communities.",careers:"Psychology, medicine/healthcare, teaching, civil services, social work and public-impact roles.",subjects:"Biology for many healthcare paths, psychology where available, social sciences and communication."}
+};
+const Q=[
+["Your school is organizing an annual fest. Which team do you naturally volunteer for?",["Setting up sound systems, lighting, or building the event website/app","Designing posters, stage decor, and promotional reels","Managing sponsors, budgets, ticket sales, and leading the team","Anchoring, guiding guests, and handling participant queries"]],
+["You get 2 hours of completely free time with no homework. What do you enjoy doing most?",["Solving puzzles, gaming strategy, coding, or figuring out how gadgets work","Sketching, editing videos, writing stories, or playing music","Watching business case studies, planning how to earn/save money, or debating","Talking with friends, helping someone with a problem, or volunteering"]],
+["Which type of YouTube video or documentary hooks you instantly?",["How space rockets or AI algorithms actually work","Behind the scenes of movie CGI, art, or interior transformations","How a small startup became a billion-dollar brand","Human psychology experiments or inspiring real-life hero stories"]],
+["In a group science/social project, which part do you usually take ownership of?",["Researching facts, analyzing data, and building the working model","Making the presentation slides, charts, and visuals look attractive","Dividing tasks among teammates and presenting the final pitch to the teacher","Making sure everyone in the group is heard and no one feels left out"]],
+["When you look at a popular mobile app (like Instagram or Zomato), what catches your eye first?",["How fast it loads and how its recommendation algorithm knows what I like","Its color theme, icons, animations, and smooth layout","How it makes money through ads, subscriptions, and discounts","How it connects people and impacts daily habits or mental health"]],
+["Which school activity feels least like boring work to you?",["Lab experiments, math brainteasers, or computer practicals","Art/craft periods, essay writing, drama, or photography","Student council elections, debate competitions, or event organizing","Peer mentoring, social awareness drives, or biology/history discussions"]],
+["If you had to start a small weekend project with friends, what would it be?",["Building a basic robot, game, or weather-tracking gadget","Launching a digital comic, photography page, or custom T-shirt brand","Reselling thrifted items or organizing a paid gaming tournament","Teaching basic English/digital skills to kids in your neighborhood"]],
+["What kind of compliment makes you feel proudest?",["You are so logical—you fixed that problem in minutes!","Your imagination and aesthetic sense are next level!","You are a born leader—you know how to get things done!","You explain things so well and truly understand people!"]],
+["When reading a story or watching a movie, what do you notice most?",["Plot holes, scientific accuracy, and logical consistency","Cinematography, background score, costumes, and visual style","The strategy, power dynamics, and decisions of the main characters","The emotional journey and relationships between the characters"]],
+["You spent 4 hours making a poster or project, and your teacher/client says, “Change the whole layout, it's not working.” How do you react?",["I ask specifically what failed logically so I can fix the structure step-by-step","I feel slightly bad at first, but I enjoy experimenting with 3 completely new visual styles","I negotiate which changes are strictly necessary to still meet the deadline","I ask them about their vision and feelings so we stay on the same page"]],
+["You are given a 10-page document full of errors to fix before tomorrow. What is your approach?",["I patiently check every single line, number, and formula until it is accurate","I fix the visual formatting and headings first so it looks clean and readable","I focus on the most critical pages first and delegate/summarize the rest to save time","I discuss the mistakes gently with the person who wrote it so they don't feel bad"]],
+["Your team's main idea fails 1 hour before the school competition. What do you do instinctively?",["Troubleshoot the exact technical/logical reason it broke and build a quick workaround","Improvise a creative visual or storytelling twist to cover up the missing part","Stay calm, reassign roles immediately, and pitch a confident backup plan to the judges","Calm down panicking teammates so everyone stays focused and motivated"]],
+["When learning a brand-new complex skill (like video editing, coding, or accounting), how do you master it?",["By understanding the core rules, formulas, and practicing systematically","By playing around with tools freely and learning through trial and visual experimentation","By learning just enough to build something useful and testing it in the real world","By learning alongside a friend, mentor, or study group where we discuss concepts"]],
+["Which work environment sounds energizing rather than exhausting to you?",["Deep, uninterrupted solo focus solving complex problems on a computer or in a lab","A flexible, expressive studio space with freedom to try original ideas","A fast-paced environment with targets, meetings, negotiations, and visible results","A collaborative space interacting with new people, students, or patients every day"]],
+["Look at a poorly designed school timetable or confusing signboard. What bothers you most?",["The scheduling clashes and inefficient logic behind how it was planned","The ugly fonts, bad color contrast, and cluttered spacing that hurt the eyes","The wasted time and lack of accountability for whoever approved it","How confused and stressed new students must feel trying to read it"]],
+["Every career has a boring side. Which task can you tolerate best without quitting?",["Debugging errors or checking long spreadsheets of numbers","Refining tiny visual details, like alignment or shading, for hours until it looks right","Making follow-up calls, organizing files, and tracking deadlines","Listening patiently to people repeat the same problems or doubts"]],
+["When you have to make a tough choice, what do you trust most?",["Hard data, facts, and pros-vs-cons logic","My gut instinct, originality, and what feels unique","Practicality, risk-vs-reward, and long-term benefit","How my decision will affect the people around me"]],
+["Your favourite hobby becomes a serious project with strict deadlines, client rules, repeated feedback and some routine work. What would you most likely do?",["Break the work into steps, learn the required tools and keep improving until it meets the brief","Keep experimenting, accept useful revisions and find a way to make the final output feel original","Agree on scope, time and expectations, then organize the work to deliver reliably","Listen carefully to the people involved, communicate clearly and make sure the result helps them"]]
+];
+const trackKeys=["TECH","CREATIVE","BUSINESS","PEOPLE"];
+const letters=["A","B","C","D"];
+let student="",klass="",answers=Array(18).fill(null),current=0;
+const $=id=>document.getElementById(id);
+function show(id){["welcome","quiz","results"].forEach(x=>$(x).classList.toggle("hidden",x!==id));window.scrollTo({top:0,behavior:"smooth"});}
+function start(){student=$("studentName").value.trim();klass=$("studentClass").value;if(!student){$("studentName").focus();alert("Please enter the student's name.");return}if(!klass){$("studentClass").focus();alert("Please select your class.");return}answers=Array(18).fill(null);current=0;show("quiz");renderQuestion();}
+function renderQuestion(){
+ const n=current+1,phase=current<9?"Part 1: What Naturally Excites You? (Interest Check)":"Part 2: How Do You Handle Real-World Challenges? (Skill & Temperament Check)";
+ $("phaseName").textContent=phase;$("counter").textContent=`Question ${n} of 18`;$("progressFill").style.width=`${n/18*100}%`;
+ $("qKicker").textContent=current<9?"Interest check · +2 interest points":"Skill & temperament check · +2 skill points";
+ $("questionText").textContent=`Q${n}. ${Q[current][0]}`;$("questionSub").textContent=current<9?"Choose what you naturally feel curious about or enjoy.":"Choose what you would realistically do, even when the work gets challenging.";
+ $("options").innerHTML="";
+ Q[current][1].forEach((choice,i)=>{const b=document.createElement("button");b.type="button";b.className="option"+(answers[current]===i?" selected":"");b.setAttribute("aria-pressed",answers[current]===i?"true":"false");const l=document.createElement("span");l.className="letter";l.textContent=letters[i];const t=document.createElement("span");t.className="option-text";t.textContent=choice;b.append(l,t);b.addEventListener("click",()=>{answers[current]=i;renderQuestion();});$("options").appendChild(b);});
+ $("backBtn").disabled=current===0;$("nextBtn").disabled=answers[current]===null;$("nextBtn").textContent=current===17?"See my results →":"Next question →";
+}
+$("startBtn").addEventListener("click",start);
+$("backBtn").addEventListener("click",()=>{if(current>0){current--;renderQuestion();}});
+$("nextBtn").addEventListener("click",()=>{if(answers[current]===null)return;if(current<17){current++;renderQuestion()}else calculateResults()});
+function calculateResults(){
+ const interest={TECH:0,CREATIVE:0,BUSINESS:0,PEOPLE:0},skill={TECH:0,CREATIVE:0,BUSINESS:0,PEOPLE:0};
+ answers.forEach((a,i)=>{const k=trackKeys[a];if(i<9)interest[k]+=2;else skill[k]+=2;});
+ const total=Object.fromEntries(trackKeys.map(k=>[k,interest[k]+skill[k]]));
+ const sorted=[...trackKeys].sort((a,b)=>total[b]-total[a]||skill[b]-skill[a]||interest[b]-interest[a]);
+ const top=sorted[0],second=sorted[1],gap=interest[top]-skill[top];
+ $("resultTitle").textContent=`${student}, here's your direction snapshot`;
+ $("resultIntro").textContent=`Class ${klass} · Your answers suggest ${tracks[top].full.toLowerCase()} may be a useful area to explore. This is a starting point for reflection—not a label or a final career decision.`;
+ $("topTrackName").textContent=`Your strongest combined signal: ${top} · ${tracks[top].full}`;
+ $("topTrackDesc").textContent=tracks[top].desc+" Possible areas: "+tracks[top].careers;
+ let title,desc;
+ if(gap>=4){title="Interest is ahead of your current skill signal";desc=`You show stronger curiosity for ${top} than your current answers show comfort with its work habits. That is completely okay: try small projects, practice patiently and seek feedback before making a big decision.`}
+ else if(gap<=-4){title="Your skill signal is ahead of your interest";desc=`You show more comfort with ${top}-type challenges than spontaneous interest. Explore whether the subject itself motivates you, or whether you simply have a strength that could support another track.`}
+ else{title="Your interest and skill signals are fairly balanced";desc=`Your answers show a reasonably close match in ${top}. Test this with a real project and see whether the day-to-day work feels satisfying.`}
+ $("gapTitle").textContent=title;$("gapDesc").textContent=desc;
+ $("scoreRows").innerHTML="";
+ trackKeys.forEach(k=>{const wrap=document.createElement("div");wrap.className="track-row";const topLine=document.createElement("div");topLine.className="track-top";const name=document.createElement("span");name.textContent=k+" · "+tracks[k].full;const score=document.createElement("span");score.textContent=`${interest[k]} / 18  ·  ${skill[k]} / 18`;topLine.append(name,score);const pair=document.createElement("div");pair.className="bar-pair";[["interest-fill",interest[k]],["skill-fill",skill[k]]].forEach(([cls,val])=>{const bar=document.createElement("div");bar.className="bar";const fill=document.createElement("span");fill.className=cls;fill.style.width=(val/18*100)+"%";bar.appendChild(fill);pair.appendChild(bar)});wrap.append(topLine,pair);$("scoreRows").appendChild(wrap)});
+ const roadmap=document.createElement("p");roadmap.style.color="#526078";roadmap.textContent=`Start with a low-risk experiment in ${top}: spend 2–4 weeks on one small project, keep a record of what you enjoyed and what felt difficult, and ask a teacher or mentor for specific feedback. Also explore ${second} before narrowing your choices.`;$("roadmapText").replaceChildren(roadmap);
+ $("careerCards").innerHTML="";
+ [top,second].forEach((k,idx)=>{const card=document.createElement("div");card.className="road-item";const h=document.createElement("h4");h.textContent=`${idx===0?"1. Explore first":"2. Explore alongside"} · ${k}`;const p=document.createElement("p");p.textContent=tracks[k].careers;const tag=document.createElement("span");tag.className="tag";tag.textContent="Useful subjects / foundations: "+tracks[k].subjects;card.append(h,p,tag);$("careerCards").appendChild(card)});
+ const action=document.createElement("div");action.className="road-item";action.innerHTML="<h4>Try this before choosing</h4><p>Complete one beginner project, talk to someone studying or working in the field, and note the enjoyable parts as well as the repetitive or difficult parts.</p>";$("careerCards").appendChild(action);
+ const all=document.createElement("div");all.className="road-item";all.innerHTML="<h4>For your next academic decision</h4><p>For Classes 9–10, build foundations across subjects and notice what you learn well. For Classes 11–12, compare actual subject combinations, eligibility rules, entrance routes, costs and available support before selecting a stream or course.</p>";$("careerCards").appendChild(all);
+ show("results");
+}
+$("printBtn").addEventListener("click",()=>window.print());
+$("retakeBtn").addEventListener("click",()=>{answers=Array(18).fill(null);current=0;show("quiz");renderQuestion();});
+$("homeBtn").addEventListener("click",()=>show("welcome"));
+$("studentName").addEventListener("keydown",e=>{if(e.key==="Enter")start()});
+</script>
+</body>
+</html>
